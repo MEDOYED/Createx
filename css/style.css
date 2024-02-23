@@ -1,7 +1,7 @@
 html, body {
   font-family: Lato, sans-serif;
   color: #424551;
-
+  line-height: 160%;
 }
 
 .wrapper {
@@ -53,6 +53,27 @@ html, body {
 }
 
 .logo {}
+
+.heading {
+  color: #1E212C;
+}
+
+.heading__subtitle {
+  line-height: 150%;
+  margin-bottom: 8px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.heading__title {
+  margin-bottom: 48px;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
 
 
 /* =================================================================== */
@@ -165,7 +186,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   color: #1E212C;
-  margin: auto 0; 
+  margin: auto 0;
 }
 
 .header__content {
@@ -176,7 +197,7 @@ html, body {
   display: inline-flex;
   align-items: center;
   margin-bottom: 24px;
-  
+
 }
 
 .header__play svg {
@@ -239,3 +260,65 @@ html, body {
   font-weight: 900;
   padding-right: 12px;
 }
+
+
+/* =======ABOUT=================== */
+/* =======ABOUT=================== */
+
+.about {}
+
+.about__inner {}
+
+.about__createx {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.about__createx-content {
+  max-width: 600px;
+}
+
+.about__heading {
+  margin-bottom: 48px;
+}
+
+.about__text {
+  margin-bottom: 60px;
+}
+
+
+
+.about__paragraph {
+  margin-bottom: 24px;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.about__paragraph--accent {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.about__btn-box {
+  display: flex;
+}
+
+.about__btn {
+  margin-right: 24px;
+}
+
+.about__btn:last-child {
+  margin-right: 0px;
+}
+
+.button {}
+
+.button--empty {}
+
+.about__img {}
+
+.about__values {}
