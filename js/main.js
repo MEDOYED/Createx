@@ -7,4 +7,10 @@ $(function () {
     $(this).addClass('directions__filter-btn--active')
   })
 
+  $('.team__slider').slick({
+    arrows: false,
+    slidesToShow: 4,
+    infinite: true,
+  })
+
 })
