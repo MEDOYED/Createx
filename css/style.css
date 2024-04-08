@@ -663,13 +663,11 @@ html, body {
   margin-bottom: 16px;
   overflow: hidden;
   position: relative;
-  
 }
 
 .team__image {
   position: relative;
   height: 340px;
-  
 }
 
 .team__image img {
@@ -693,7 +691,7 @@ html, body {
   bottom: 0;
   padding: 20px;
   border-radius: 4px;
-  background: linear-gradient(180.00deg, rgba(30, 33, 44, 0) 43.897%,rgba(30, 33, 44, 0.03) 55.206%,rgba(30, 33, 44, 0.33) 68.728%,rgba(30, 33, 44, 0.56) 76.168%,rgba(30, 33, 44, 0.77) 83.749%,rgba(30, 33, 44, 0.92) 91.493%,rgb(30, 33, 44) 100%);
+  background: linear-gradient(180.00deg, rgba(30, 33, 44, 0) 43.897%, rgba(30, 33, 44, 0.03) 55.206%, rgba(30, 33, 44, 0.33) 68.728%, rgba(30, 33, 44, 0.56) 76.168%, rgba(30, 33, 44, 0.77) 83.749%, rgba(30, 33, 44, 0.92) 91.493%, rgb(30, 33, 44) 100%);
   transform: translateY(50%);
   transition: all .3s;
 }
@@ -742,11 +740,11 @@ html, body {
   bottom: 0;
 }
 
-.team__slider-arrows{
+.team__slider-arrows {
   display: flex;
 }
 
-.team__slider-arrow{
+.team__slider-arrow {
   display: block;
   line-height: 0;
   border-radius: 50%;
@@ -777,7 +775,7 @@ html, body {
 }
 
 
-.team__slider-arrow:hover path{
+.team__slider-arrow:hover path {
   fill: #fff;
 }
 
