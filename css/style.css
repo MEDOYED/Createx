@@ -37,6 +37,10 @@ html, body {
   padding-bottom: 195px;
 }
 
+.main__companies {
+  padding-bottom: 175px;
+}
+
 .button {
   display: inline-block;
   font-weight: 700;
@@ -835,7 +839,8 @@ html, body {
   left: -58px;
   height: 20px;
   width: 28px;
-  background: url("../images/icons/quote-ico.svg") 0 0 / 100% no-repeat;}
+  background: url("../images/icons/quote-ico.svg") 0 0 / 100% no-repeat;
+}
 
 .testimonials__quote {
   font-size: 20px;
@@ -939,8 +944,57 @@ html, body {
   border-radius: 3px;
 }
 
-.testimonials__dots .slick-active button::before{
+.testimonials__dots .slick-active button::before {
   background-color: #424551;
   transition: all .3s;
 }
 
+/* ============== COMPANIES ================== */
+/* ============== COMPANIES ================== */
+
+.companies {
+  background-color: #F4F5F7;
+}
+
+.companies__inner {
+  position: relative;
+}
+
+.companies__inner::before {
+  content: "";
+  position: absolute;
+  left: -230px;
+  bottom: -120px;;
+  background: url("../images/decor/5.svg") 0 0 / 100% no-repeat;
+  width: 90px;
+  height: 90px;
+}
+
+.companies__heading {
+  margin-bottom: 60px;
+}
+
+.companies__grid {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(6, 1fr);
+  gap: 40px 100px;
+}
+
+.companies__grid-link {
+  display: block;
+}
+
+.companies__grid-link img{
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+  opacity: 0.4;
+  transition: all 1.5s;
+}
+
+
+.companies__grid-link:hover img{
+  filter: grayscale(0);
+  opacity: 1;
+  transition: all .5s;
+}
