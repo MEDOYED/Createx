@@ -1019,6 +1019,7 @@ html, body {
 .program__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .program__content {
@@ -1081,6 +1082,7 @@ html, body {
 
 .program__accordeon-text {
   margin-top: 16px;
+  max-width: 500px;
 }
 
 .program_image {}
