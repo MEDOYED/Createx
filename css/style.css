@@ -1040,6 +1040,11 @@ html, body {
   padding-left: 40px;
 }
 
+.program__accordeon-link--active .program__accordeon-head::after{
+  transform: rotate(0deg);
+
+}
+
 .program__accordeon-item:last-child {
   margin-bottom: 0;
 }
@@ -1049,32 +1054,30 @@ html, body {
   font-size: 20px;
   line-height: 150%;
   color: #1E212C;
+  position: relative;
 }
 
 .program__accordeon-head span {
   font-weight: 400;
   color: #FF3F3A;
-  position: relative;
 }
 
 .program__accordeon-head::before,
 .program__accordeon-head::after {
   content: "";
   position: absolute;
+  top: 50%;
+  left: -40px;
   width: 18px;
   height: 2px;
-  left: 0px;
-  top: 0%;
-  /* width: 18.33px;
-  height: 1.67px;
-  left: 4.15%;
-  right: 4.15%;
-  top: 45.83%;
-  bottom: 45.83%; */
-  background: rgb(255, 63, 58);
+  background-color: #FF3F3A;
+  border-radius: 2px;
 }
 
-.program__accordeon-head::after {}
+.program__accordeon-head::after {
+  transform: rotate(90deg);
+  transition: all .3s;
+}
 
 .program__accordeon-text {
   margin-top: 16px;
