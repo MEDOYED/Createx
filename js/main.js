@@ -66,8 +66,6 @@ $(function () {
         $(this).children('.program__accordeon-text').slideDown()
       }
     })
-  })
-
 
 
     //accordion third version
@@ -87,3 +85,20 @@ $(function () {
 //     }
 //   });
 // })
+
+
+//=====  плавний скрол по странице  ===
+//=====  плавний скрол по странице  ===
+
+  $('.header__nav-list a, .header__top-btn, .footer__go-top').on('click', function(e) {
+    //отменяем стандартную обработку нажатия по силке
+    e.preventDefault();
+    // забираем индентификатор блока с атрибута href
+    var id = $(this).attr('href'),
+    //  узнаем висоту от начала страници, до блока на которий ссилается якорь
+    top = $(id).offset().top - 150;
+    //  анимируем переход на растояние - top за 1500 мс
+    $('body,html').animate({ scrollTop: top}, 1500);
+  })
+
+})
