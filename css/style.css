@@ -42,27 +42,22 @@ html, body {
   padding-bottom: 175px;
 }
 
-
 .main__program {
   padding-top: 115px;
   padding-bottom: 186px;
 }
 
-
 .main__blog {
   padding-bottom: 200px;
 }
-
 
 .main__info {
   padding-bottom: 180px;
 }
 
-
 .main__questions {
   padding-bottom: 180px;
 }
-
 
 .button {
   display: inline-block;
@@ -99,8 +94,6 @@ html, body {
   -webkit-text-fill-color: transparent;
 }
 
-.logo {}
-
 .heading {
   color: #1E212C;
 }
@@ -120,13 +113,14 @@ html, body {
   letter-spacing: 0%;
 }
 
-
 .heading--text-center {
   text-align: center;
 }
 
-/* =================================================================== */
 /* ======================HEADER__TOP================================== */
+/* ======================HEADER__TOP================================== */
+/* ======================HEADER__TOP================================== */
+
 .header {
   font-weight: 700;
   background: url("../images/decor/header-shapes.svg") 50% 50% / cover no-repeat, linear-gradient(45.00deg, rgba(255, 63, 58, .2), rgba(247, 94, 5, .2));
@@ -134,8 +128,6 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-
-.header-top {}
 
 .header-top__inner {
   display: flex;
@@ -175,10 +167,7 @@ html, body {
 
 .header__nav-link:hover {
   color: #FF3F3A;
-
 }
-
-
 
 .header__btn-box {
   display: flex;
@@ -189,12 +178,10 @@ html, body {
   margin-right: 36px;
 }
 
-
 .header__user-nav {
   white-space: nowrap;
   position: relative;
   padding-left: 28px;
-
 }
 
 .header__user-nav::before {
@@ -218,6 +205,7 @@ html, body {
   white-space: nowrap;
 }
 
+/* =======================HEADER__BODY================================ */
 /* =======================HEADER__BODY================================ */
 /* =======================HEADER__BODY================================ */
 
@@ -247,7 +235,6 @@ html, body {
   display: inline-flex;
   align-items: center;
   margin-bottom: 24px;
-
 }
 
 .header__play svg {
@@ -259,8 +246,6 @@ html, body {
 .header__play svg:hover {
   box-shadow: 0 0 0 16px rgba(255, 63, 58, 0.12);
 }
-
-
 
 .header__title {
   font-size: 64px;
@@ -312,8 +297,9 @@ html, body {
 }
 
 
-/* =======ABOUT=================== */
-/* =======ABOUT=================== */
+/* ==============================ABOUT=================== */
+/* ==============================ABOUT=================== */
+/* ==============================ABOUT=================== */
 
 .about {
   position: relative;
@@ -330,13 +316,10 @@ html, body {
   display: block;
 }
 
-.about__inner {}
-
 .about__createx {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  /* margin: 180px 0; */
   margin-bottom: 180px;
 }
 
@@ -352,8 +335,6 @@ html, body {
 .about__text {
   margin-bottom: 60px;
 }
-
-
 
 .about__paragraph {
   margin-bottom: 24px;
@@ -382,15 +363,9 @@ html, body {
   margin-right: 0px;
 }
 
-.button {}
-
-.button--empty {}
-
-.about__img {}
-
-
-/* =======ABOUT__VALUES=============== */
-/* =======ABOUT__VALUES=============== */
+/* =========================ABOUT__VALUES=============== */
+/* =========================ABOUT__VALUES=============== */
+/* =========================ABOUT__VALUES=============== */
 
 .about__values {
   display: flex;
@@ -438,10 +413,9 @@ html, body {
   margin-right: 16px;
 }
 
-/* ------SECTION DIRECTION  ===============*/
-/* ------SECTION DIRECTION =============== */
-
-.directions {}
+/* ----==================--SECTION DIRECTION  ===============*/
+/* ----==================--SECTION DIRECTION =============== */
+/* ----==================--SECTION DIRECTION =============== */
 
 .directions__inner {
   position: relative;
@@ -470,8 +444,6 @@ html, body {
 .directions__heading {
   margin-bottom: 90px;
 }
-
-.directions__body {}
 
 .directions__filter-box {
   display: flex;
@@ -512,7 +484,6 @@ html, body {
 
 .directions__list-item {
   border-radius: 4px;
-  /* overflow: hidden; */
 }
 
 .directions__list-link {
@@ -541,7 +512,6 @@ html, body {
 .directions__list-item--development .directions__link-tag {
   background-color: #7772F1;
 }
-
 
 .directions__list-link:hover {
   box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
@@ -613,10 +583,6 @@ html, body {
   text-align: center;
 }
 
-
-
-.cert {}
-
 .cert__inner {
   display: flex;
   justify-content: space-between;
@@ -632,7 +598,6 @@ html, body {
   height: 60px;
   background: url("../images/decor/4.svg") 0 0 no-repeat;
 }
-
 
 .cert__content {
   margin-right: 30px;
@@ -660,10 +625,9 @@ html, body {
 
 .sert__image-box {
   box-shadow: rgba(0, 0, 0, 0.25);
-
 }
 
-
+/* ==================== TEAM ====================================== */
 /* ==================== TEAM ====================================== */
 /* ==================== TEAM ====================================== */
 
@@ -734,7 +698,6 @@ html, body {
   margin-right: 0;
 }
 
-
 .team__socials-link {
   display: block;
   line-height: 0;
@@ -804,7 +767,6 @@ html, body {
   transform: translate(-50%, -50%) scale(1);
 }
 
-
 .team__slider-arrow:hover path {
   fill: #fff;
 }
@@ -815,8 +777,7 @@ html, body {
 
 /* =============TESTIMONIALS==================== */
 /* =============TESTIMONIALS==================== */
-
-
+/* =============TESTIMONIALS==================== */
 
 .testimonials {
   background-color: #F4F5F7
@@ -829,7 +790,6 @@ html, body {
 
 .testimonials__heading {
   margin-bottom: 60px;
-
 }
 
 .testimonials__slider-wrapper {
@@ -947,7 +907,6 @@ html, body {
 
 .testimonials__dots li:last-child {
   margin-right: 0;
-
 }
 
 .testimonials__dots button {
@@ -972,8 +931,9 @@ html, body {
   transition: all .3s;
 }
 
-/* ============== COMPANIES ================== */
-/* ============== COMPANIES ================== */
+/* ============== COMPANIES ================================= */
+/* ============== COMPANIAES ================================= */
+/* ============== COMPANIAES ================================= */
 
 .companies {
   background-color: #F4F5F7;
@@ -988,7 +948,6 @@ html, body {
   position: absolute;
   left: -230px;
   bottom: -120px;
-  ;
   background: url("../images/decor/5.svg") 0 0 / 100% no-repeat;
   width: 90px;
   height: 90px;
@@ -1052,7 +1011,6 @@ html, body {
 
 .program__accordeon-link--active .program__accordeon-head::after {
   transform: rotate(0deg);
-
 }
 
 .program__accordeon-item:last-child {
@@ -1094,16 +1052,9 @@ html, body {
   max-width: 500px;
 }
 
-
-
 /* =============== BLOG ================================================ */
 /* =============== BLOG ================================================ */
 /* =============== BLOG ================================================ */
-
-
-.blog {}
-
-.blog__inner {}
 
 .blog__top {
   display: flex;
@@ -1115,8 +1066,6 @@ html, body {
 .blog__heading {
   margin-right: 30px;
 }
-
-.blog__btn {}
 
 .blog__row {
   display: flex;
@@ -1131,8 +1080,6 @@ html, body {
   display: block;
   transition: all 1.3s;
 }
-
-.blog__item-inner {}
 
 .blog__image-box {
   border-radius: 4px;
@@ -1166,8 +1113,6 @@ html, body {
   height: 16px;
   margin-right: 4px;
 }
-
-.blog__item-content {}
 
 .blog__item-info {
   display: flex;
@@ -1276,11 +1221,6 @@ html, body {
 /* =============== INFO ================================================ */
 /* =============== INFO ================================================ */
 
-
-.info {}
-
-.container {}
-
 .info__inner {
   display: flex;
   align-items: flex-end;
@@ -1349,8 +1289,6 @@ html, body {
   background: url("../images/icons/mark-icon.svg") 0 0 / 100% no-repeat;
 }
 
-.info__follow {}
-
 .info__follow-head {
   color: rgb(30, 33, 44);
   font-size: 16px;
@@ -1397,12 +1335,9 @@ html, body {
   overflow: hidden;
 }
 
-
 /* =============== QUESTIONS ================================================ */
 /* =============== QUESTIONS ================================================ */
 /* =============== QUESTIONS ================================================ */
-
-.questions {}
 
 .questions__inner {
   display: flex;
@@ -1410,15 +1345,9 @@ html, body {
   justify-content: space-between;
 }
 
-.questions__img {}
-
 .questions__content {
   margin-left: 30px;
 }
-
-.questions__heading {}
-
-.questions__form {}
 
 .questions__form-row {
   display: flex;
@@ -1428,7 +1357,6 @@ html, body {
 .questions__form-label {
   margin-right: 25px;
   flex: 1 1 auto;
-
 }
 
 .questions__form-label:last-child {
@@ -1454,8 +1382,6 @@ html, body {
 .questions__form-text::placeholder {
   color: #9A9CA5;
 }
-
-.questions__form-input {}
 
 .questions__form-text {
   resize: none;
@@ -1686,3 +1612,9 @@ html, body {
 .footer__go-top:hover {
   opacity: 1;
 }
+
+
+/* ============= MEDIA ================================= */
+/* ============= MEDIA ================================= */
+/* ============= MEDIA ================================= */
+
