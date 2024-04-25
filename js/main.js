@@ -101,4 +101,37 @@ $(function () {
     $('body,html').animate({ scrollTop: top}, 1500);
   })
 
+  setInterval(() => {
+    if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === true) {
+      $('.burger').addClass('burger--follow')
+    } else {
+      $('.burger').removeClass('burger--follow')
+      
+    }
+  }, 0);
+
+  // откритие бургера
+
+  $(".burger, .overlay, .header__top a").on("click", function (e) {
+    e.preventDefault()
+    $(".header__top").toggleClass("header__top--open")
+
+  })
+
+  $('.footer__top-title--slide').on('click', function () {
+    $(this).next().slideToggle()
+  })
+
+  // затемнение екрана, когда открит бургер
+  $('.burger, .overlay').on('click', function(e) {
+    e.preventDefault()
+    $('.overlay--show').toggleClass('overlay')
+  })
+
+  $('.burger').on('click', function(e) {
+    e.preventDefault()
+    // $('.burger--active').toggleClass('burger')
+  })
+
+  
 })
