@@ -420,6 +420,7 @@ html, body {
   line-height: 150%;
   letter-spacing: 0%;
   min-width: 300px;
+  white-space: nowrap;
 }
 
 .about__number {
@@ -1653,12 +1654,11 @@ html, body {
     font-size: 52px;
     min-width: 376px;
   }
+
   .header__image {
     max-width: 540px;
   }
 }
-
-
 
 /* ========================== 1100 =========================== */
 
@@ -1773,8 +1773,16 @@ html, body {
   .header__user-nav {
     margin-bottom: 30px;
   }
+
   /* ================================================================ */
 
+  .heading__title {
+    font-size: 37px;
+  }
+
+  .about__img {
+    max-width: 400px;
+  }
 }
 
 /* ========================== 900 =========================== */
@@ -1783,15 +1791,72 @@ html, body {
   .header__content {
     margin: 0;
   }
+
   .header__image {
     display: none;
   }
+
   .header__row {
     display: none;
   }
+
+  /* ================================================================ */
+
+  .heading__title {
+    font-size: 37px;
+  }
+
+  .about__img {
+    display: none;
+  }
+}
+
+/* ========================== 700 =========================== */
+
+@media (max-width: 700px) {
+  .about__createx {
+    margin-bottom: 60px;
+  }
+  .about__values {
+    flex-direction: column;
+  }
+  .about__image-box {
+    margin-bottom: 30px;
+  }
+  .about__numbers {
+    margin: 0;
+    align-self: flex-start;
+  }
+}
+
+/* ========================== 550 =========================== */
+
+@media (max-width: 550px) {
+  .heading {
+    margin-bottom: 30px;
+  }
+  .heading__subtitle {
+    font-size: 14px;
+    margin: 0;
+  }
+  .heading__title {
+    font-size: 24px;
+  }
+  .about__text {
+    margin-bottom: 30px;
+  }
+  .about__paragraph{
+    font-size: inherit;
+  }
+  .about__btn-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about__btn {
+    margin: 0 0 30px 0;
+  }
 }
 /* ========================== 450 =========================== */
-
 
 @media (max-width: 450px) {
   .header__top {
@@ -1810,11 +1875,11 @@ html, body {
 
   .header__content-buttons {
     flex-direction: column;
-    align-items: flex-start;
-  }
-  .header__content-btn {
-    margin: 0 0 30px 0;  
     text-align: center;
-    width: auto;
+  }
+
+  .header__content-btn {
+    margin: 0 0 30px 0;
+    text-align: center;
   }
 }
