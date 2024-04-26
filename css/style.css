@@ -615,6 +615,10 @@ html, body {
   text-align: center;
 }
 
+/* ========================== CERT ============================== */
+/* ========================== CERT ============================== */
+/* ========================== CERT ============================== */
+
 .cert__inner {
   display: flex;
   justify-content: space-between;
@@ -639,24 +643,30 @@ html, body {
   margin-bottom: 50px;
 }
 
-.sert__text {
+.cert__text {
   margin-bottom: 32px;
 }
 
-.sert__logos {
+.cert__logos {
   display: flex;
 }
 
-.sert__logos-item {
+.cert__logos-item {
   margin-right: 40px;
 }
 
-.sert__logos-item:last-child {
+.cert__logos-item:last-child {
   margin-right: 0px;
 }
 
-.sert__image-box {
+.cert__image-box {
   box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+.cert__image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* ==================== TEAM ====================================== */
@@ -1778,15 +1788,29 @@ html, body {
   }
 
   /* ================================================================ */
-
+  
   .heading__title {
     font-size: 37px;
   }
-
+  
   .about__img {
     max-width: 400px;
   }
+  /* ---------------------------------- */
+
+  .cert__inner {
+    flex-direction: column;
+    /* max-width: 600px; */
+    align-items: center;
+  }
+  .cert__content {
+    margin: 0 0 30px 0;
+  }
+  .cert__heading {
+    text-align: center;
+  }
 }
+
 
 /* ========================== 900 =========================== */
 
@@ -1920,8 +1944,23 @@ html, body {
   }
 
   /* ---------------------------------- */
-
+  
   .directions__filter-box {
     margin-bottom: 15px;
+  }
+
+  /* ---------------------------------- */
+  
+  .cert__logos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cert__logos-item {
+    margin: 0 0 30px 0;
+  }
+
+  .cert__logos-item:last-child {
+    margin: 0;
   }
 }
