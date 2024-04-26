@@ -476,11 +476,13 @@ html, body {
 
 .directions__filter-box {
   display: flex;
-  margin-bottom: 56px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .directions__filter-item {
   margin-right: 45px;
+  margin-bottom: 15px;
 }
 
 .directions__filter-item:last-child {
@@ -496,6 +498,7 @@ html, body {
   font-size: 16px;
   padding: 5px 7px;
   line-height: 1.6;
+  white-space: nowrap;
 }
 
 .directions__filter-btn--active {
@@ -1800,15 +1803,34 @@ html, body {
     display: none;
   }
 
-  /* ================================================================ */
-
   .heading__title {
     font-size: 37px;
   }
-
+  /* ================================================================ */
+  
   .about__img {
     display: none;
   }
+  /* ================================================================ */
+
+  .directions__filter-box {
+    justify-content: flex-start;
+  }
+
+  .directions__filter-item {
+    margin-right: 10px;
+  }
+
+  .directions__list {
+    gap: 30px 10px;
+  }
+  
+  .directions__link-content {
+    padding: 24px 5px 5px 5px;
+  }
+
+
+
 }
 
 /* ========================== 700 =========================== */
@@ -1826,6 +1848,10 @@ html, body {
   .about__numbers {
     margin: 0;
     align-self: flex-start;
+  }
+  /* ------------------------------------------------- */
+  .directions__list {
+    grid-template: repeat(3, auto) / repeat(2, 1fr);
   }
 }
 
@@ -1855,6 +1881,16 @@ html, body {
   .about__btn {
     margin: 0 0 30px 0;
   }
+
+  /* ---------------------------------------- */
+  
+  .directions__list {
+    grid-template: none;
+  }
+
+  .directions__list-item--empty {
+    display: none;
+  }
 }
 /* ========================== 450 =========================== */
 
@@ -1881,5 +1917,11 @@ html, body {
   .header__content-btn {
     margin: 0 0 30px 0;
     text-align: center;
+  }
+
+  /* ---------------------------------- */
+
+  .directions__filter-box {
+    margin-bottom: 15px;
   }
 }
