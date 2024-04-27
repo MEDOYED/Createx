@@ -1003,7 +1003,8 @@ html, body {
 .companies__grid {
   display: grid;
   grid-template: repeat(2, auto) / repeat(6, 1fr);
-  gap: 40px 100px;
+  gap: 40px 8.1%;
+  margin: 0 auto;
 }
 
 .companies__grid-link {
@@ -1811,6 +1812,10 @@ html, body {
     text-align: center;
   }
 }
+/* ----------------------------------------- */
+  .companies__grid {
+    gap: 40px 5%;
+  }
 
 
 /* ========================== 900 =========================== */
@@ -1853,11 +1858,18 @@ html, body {
   .directions__link-content {
     padding: 24px 5px 5px 5px;
   }
+  /* ------------------------------------- */
+
+  .companies__grid {
+    grid-template: repeat(3, auto) / repeat(4, 1fr);
+  }
 
 
 
 }
 
+/* ========================== 700 =========================== */
+/* ========================== 700 =========================== */
 /* ========================== 700 =========================== */
 
 @media (max-width: 700px) {
@@ -1986,6 +1998,10 @@ html, body {
   .testimonials__dots button {
     width: 20px;
   }
+  /* ------------------------------- */
+  .companies__grid {
+    grid-template: repeat(4, auto) / repeat(3, 1fr);
+  }
 }
 /* ========================== 450 =========================== */
 
@@ -2031,6 +2047,10 @@ html, body {
 
   .cert__logos-item:last-child {
     margin: 0;
+  }
+  /* -------------------------------- */
+  .companies__grid {
+    grid-template: repeat(5, auto) / repeat(2, 1fr);
   }
 }
 
