@@ -34,7 +34,6 @@ $(function () {
             slidesToShow: 1,
             draggable: true,
             dots: true,
-            // 
           },
         },
       ],
@@ -56,6 +55,15 @@ $(function () {
     dots: true,
     appendDots: $('.testimonials__dots'),
     waitForAnimate: false,
+    // responsive:
+    //   [
+    //     {
+    //       breakpoint: 700,
+    //       settings: {
+            
+    //       },
+    //     },
+    //   ],
   })
 
   $('.testimonials__prew').on('click', function (e) {

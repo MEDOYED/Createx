@@ -872,6 +872,7 @@ html, body {
   line-height: 150%;
   margin-bottom: 24px;
   position: relative;
+  text-align: justify;
 }
 
 .testimonials__user {
@@ -1877,8 +1878,21 @@ html, body {
   .directions__list {
     grid-template: repeat(3, auto) / repeat(2, 1fr);
   }
+  /* -------------------------------------------------- */
+  .testimonials__slider-wrapper {
+    padding: 0;
+  }
+  .testimonials__slide {
+    padding: 30px 15px;
+  }
+
+  .testimonials__arrow {
+    display: none;
+  }
 }
 
+/* ========================== 550 =========================== */
+/* ========================== 550 =========================== */
 /* ========================== 550 =========================== */
 
 @media (max-width: 550px) {
@@ -1954,7 +1968,24 @@ html, body {
     background-color: #61d41e;
     transition: all .3s;
   }
-
+  /* ----------------------------------------- */
+  .testimonials__slider-wrapper {
+    margin-bottom: 15px;
+  }
+  .testimonials__slide-inner {
+    padding-left: 40px;
+  }
+  .testimonials__quote {
+    font-size: 17px;
+    line-height: inherit;
+  }
+  .testimonials__quote::before {
+    left: -48px;
+    scale: 0.8;
+  }
+  .testimonials__dots button {
+    width: 20px;
+  }
 }
 /* ========================== 450 =========================== */
 
@@ -1967,9 +1998,7 @@ html, body {
   /* -------------------------------------------------- */
 
   .header__title {
-    /* max-width: 376px; */
     max-width: 200px;
-    /* max-width: none; */
     font-size: 35px;
   }
 
