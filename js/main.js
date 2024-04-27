@@ -14,6 +14,30 @@ $(function () {
     draggable: false,
     appendArrows: $('.team__slider-arrows'),
     waitForAnimate: false,
+    responsive:
+      [
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 550,
+          settings: {
+            slidesToShow: 1,
+            draggable: true,
+            dots: true,
+            // 
+          },
+        },
+      ],
   })
 
   $('.team__slider-prev').on('click', function (e) {
@@ -54,51 +78,51 @@ $(function () {
 
 
   // accordion second version
-    $('.program__accordeon-link').on('click', function (e) {
-      e.preventDefault()
-      if ($(this).hasClass('program__accordeon-link--active')) {
-        $(this).removeClass('program__accordeon-link--active')
-        $(this).children('.program__accordeon-text').slideUp()
-      } else {
-        $('.program__accordeon-link').removeClass('program__accordeon-link--active')
-        $('.program__accordeon-text').slideUp()
-        $(this).addClass('program__accordeon-link--active')
-        $(this).children('.program__accordeon-text').slideDown()
-      }
-    })
+  $('.program__accordeon-link').on('click', function (e) {
+    e.preventDefault()
+    if ($(this).hasClass('program__accordeon-link--active')) {
+      $(this).removeClass('program__accordeon-link--active')
+      $(this).children('.program__accordeon-text').slideUp()
+    } else {
+      $('.program__accordeon-link').removeClass('program__accordeon-link--active')
+      $('.program__accordeon-text').slideUp()
+      $(this).addClass('program__accordeon-link--active')
+      $(this).children('.program__accordeon-text').slideDown()
+    }
+  })
 
 
-    //accordion third version
-//   $('.program__accordeon-link').on('click', function (e) {
-//     e.preventDefault();
+  //accordion third version
+  //   $('.program__accordeon-link').on('click', function (e) {
+  //     e.preventDefault();
 
-//     var isActive = $(this).hasClass('program__accordeon-link--active');
+  //     var isActive = $(this).hasClass('program__accordeon-link--active');
 
-//     // Зняття активного класу та згортання всіх текстів
-//     $('.program__accordeon-link').removeClass('program__accordeon-link--active');
-//     $('.program__accordeon-text').slideUp();
+  //     // Зняття активного класу та згортання всіх текстів
+  //     $('.program__accordeon-link').removeClass('program__accordeon-link--active');
+  //     $('.program__accordeon-text').slideUp();
 
-//     // Якщо елемент не активний - розгорнути
-//     if (!isActive) {
-//       $(this).addClass('program__accordeon-link--active');
-//       $(this).children('.program__accordeon-text').slideDown();
-//     }
-//   });
-// })
+  //     // Якщо елемент не активний - розгорнути
+  //     if (!isActive) {
+  //       $(this).addClass('program__accordeon-link--active');
+  //       $(this).children('.program__accordeon-text').slideDown();
+  //     }
+  //   });
+  // })
 
 
-//=====  плавний скрол по странице  ===
-//=====  плавний скрол по странице  ===
+  //=====  плавний скрол по странице  ===
+  //=====  плавний скрол по странице  ===
 
-  $('.header__nav-list a, .header__top-btn, .footer__go-top').on('click', function(e) {
+  $('.header__nav-list a, .header__top-btn, .footer__go-top').on('click', function (e) {
     //отменяем стандартную обработку нажатия по силке
     e.preventDefault();
     // забираем индентификатор блока с атрибута href
     var id = $(this).attr('href'),
-    //  узнаем висоту от начала страници, до блока на которий ссилается якорь
-    top = $(id).offset().top - 150;
+      //  узнаем висоту от начала страници, до блока на которий ссилается якорь
+      top = $(id).offset().top - 150;
     //  анимируем переход на растояние - top за 1500 мс
-    $('body,html').animate({ scrollTop: top}, 1500);
+    $('body,html').animate({ scrollTop: top }, 1500);
   })
 
   setInterval(() => {
@@ -106,7 +130,7 @@ $(function () {
       $('.burger').addClass('burger--follow')
     } else {
       $('.burger').removeClass('burger--follow')
-      
+
     }
   }, 0);
 
@@ -123,15 +147,15 @@ $(function () {
   })
 
   // затемнение екрана, когда открит бургер
-  $('.burger, .overlay').on('click', function(e) {
+  $('.burger, .overlay').on('click', function (e) {
     e.preventDefault()
     $('.overlay--show').toggleClass('overlay')
   })
 
-  $('.burger').on('click', function(e) {
+  $('.burger').on('click', function (e) {
     e.preventDefault()
     // $('.burger--active').toggleClass('burger')
   })
 
-  
+
 })

@@ -1911,10 +1911,50 @@ html, body {
   .directions__list {
     grid-template: none;
   }
-
+  
   .directions__list-item--empty {
     display: none;
   }
+  /* ---------------------------------------- */
+
+  .team__slider-arrow {
+    display: none;
+  }
+
+  .team__image-box {
+    max-width: 300px;
+    margin: 0 auto 16px;
+  }
+
+  .team__slider .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .team__slider li {
+    margin-right: 10px;
+  }
+  .team__slider button {
+    font-size: 0;
+    background: transparent;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .team__slider button:before {
+    border: solid 1px #444343;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #c8d417;
+  }
+  .team__slider .slick-active button::before {
+    background-color: #61d41e;
+    transition: all .3s;
+  }
+
 }
 /* ========================== 450 =========================== */
 
@@ -1964,3 +2004,4 @@ html, body {
     margin: 0;
   }
 }
+
