@@ -1428,6 +1428,15 @@ html, body {
   justify-content: space-between;
 }
 
+.questions__img {
+  min-width: 350px;
+}
+
+.questions__img img {
+  height: 100%;
+  width: 100%;
+}
+
 .questions__content {
   margin-left: 30px;
 }
@@ -1995,7 +2004,13 @@ html, body {
     width: 100%;
     max-width: none;
   }
-
+  /* ----------------------------- */
+  .questions__img {
+    display: none;
+  }
+  .questions__content {
+    margin: 0;
+  }
 }
 
 /* ========================== 700 =========================== */
@@ -2167,6 +2182,19 @@ html, body {
     flex-direction: column;
     align-items: flex-start;
     margin: 0 30px 0 0;
+  }
+  /* -------------------------------- */
+  .questions__form-row {
+    flex-direction: column;
+  }
+  .questions__form-label {
+    margin: 0 0 24px 0;
+  }
+  .questions__form-label:last-child {
+    margin: 0;
+  }
+  .questions__checkbox-label {
+    margin: 0 0 24px 0;
   }
 
 }
