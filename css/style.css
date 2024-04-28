@@ -1121,7 +1121,7 @@ html, body {
 }
 
 .blog__row {
-  display: flex;  
+  display: flex;
   margin: 0 -15px;
 }
 
@@ -1145,7 +1145,7 @@ html, body {
 .blog__image-box {
   border-radius: 4px;
   overflow: hidden;
-  position: relative; 
+  position: relative;
   margin-bottom: 16px;
 }
 
@@ -1272,16 +1272,17 @@ html, body {
   color: #FF3F3A;
 }
 
-.blog__item--podcast .blog__image-box  {
+.blog__item--podcast .blog__image-box {
   background-color: #a3d0f7;
 }
 
-.blog__item--video .blog__image-box  {
+.blog__item--video .blog__image-box {
   background-color: #caf0e3;
 }
 
-.blog__item--article .blog__image-box  {
-  background-color: #fff8aa;;
+.blog__item--article .blog__image-box {
+  background-color: #fff8aa;
+  ;
 }
 
 
@@ -1711,28 +1712,35 @@ html, body {
   .header__image {
     max-width: 540px;
   }
+
   /* ------------------------------ */
   .blog__item-info {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 0 8px;
   }
+
   .blog__info-el {
     padding: 0;
   }
+
   .blog__info-el::after {
     content: none;
   }
+
   .blog__info-dir {
     order: 1;
   }
+
   .blog__info-date {
     order: 3;
     flex-basis: 100%;
   }
+
   .blog__info-time {
     order: 2;
   }
+
   /* -------------------------------- */
 
 }
@@ -1852,14 +1860,15 @@ html, body {
   }
 
   /* ================================================================ */
-  
+
   .heading__title {
     font-size: 37px;
   }
-  
+
   .about__img {
     max-width: 400px;
   }
+
   /* ---------------------------------- */
 
   .cert__inner {
@@ -1867,20 +1876,24 @@ html, body {
     /* max-width: 600px; */
     align-items: center;
   }
+
   .cert__content {
     margin: 0 0 30px 0;
   }
+
   .cert__heading {
     text-align: center;
   }
+
   /* ----------------------------------------- */
   .companies__grid {
     gap: 40px 5%;
   }
+
   /* ----------------------------------- */
   .program__image {
     max-width: 400px;
-    
+
   }
 
 }
@@ -1890,6 +1903,7 @@ html, body {
   .program__content {
     margin-right: 0px;
   }
+
   .program__image {
     display: none;
   }
@@ -1913,11 +1927,13 @@ html, body {
   .heading__title {
     font-size: 37px;
   }
+
   /* ================================================================ */
-  
+
   .about__img {
     display: none;
   }
+
   /* ================================================================ */
 
   .directions__filter-box {
@@ -1931,15 +1947,17 @@ html, body {
   .directions__list {
     gap: 30px 10px;
   }
-  
+
   .directions__link-content {
     padding: 24px 5px 5px 5px;
   }
+
   /* ------------------------------------- */
 
   .companies__grid {
     grid-template: repeat(3, auto) / repeat(4, 1fr);
   }
+
   /* ---------------------------------------- */
   .blog__row {
     flex-direction: column;
@@ -1950,20 +1968,33 @@ html, body {
   .blog__item {
     padding: 0 0 30px 0;
   }
-  .blog__item-inner {
-    
-  }
+
+  .blog__item-inner {}
+
   .blog__image-box {
     display: flex;
     justify-content: center;
-    /* width: 100%; */
   }
+
   .blog__image-box img {
     width: auto;
   }
 
+  /* ----------------------------------- */
+  .info__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .info__content {
+    margin: 0 0 30px 0;
+  }
 
+  .info__map {
+    height: 200px;
+    width: 100%;
+    max-width: none;
+  }
 
 }
 
@@ -1975,24 +2006,30 @@ html, body {
   .about__createx {
     margin-bottom: 60px;
   }
+
   .about__values {
     flex-direction: column;
   }
+
   .about__image-box {
     margin-bottom: 30px;
   }
+
   .about__numbers {
     margin: 0;
     align-self: flex-start;
   }
+
   /* ------------------------------------------------- */
   .directions__list {
     grid-template: repeat(3, auto) / repeat(2, 1fr);
   }
+
   /* -------------------------------------------------- */
   .testimonials__slider-wrapper {
     padding: 0;
   }
+
   .testimonials__slide {
     padding: 30px 15px;
   }
@@ -2000,6 +2037,7 @@ html, body {
   .testimonials__arrow {
     display: none;
   }
+
   /* ------------------------------------------ */
   .program__accordeon-head {
     font-size: inherit;
@@ -2015,36 +2053,43 @@ html, body {
   .heading {
     margin-bottom: 30px;
   }
+
   .heading__subtitle {
     font-size: 14px;
     margin: 0;
   }
+
   .heading__title {
     font-size: 24px;
   }
+
   .about__text {
     margin-bottom: 30px;
   }
-  .about__paragraph{
+
+  .about__paragraph {
     font-size: inherit;
   }
+
   .about__btn-box {
     flex-direction: column;
     text-align: center;
   }
+
   .about__btn {
     margin: 0 0 30px 0;
   }
 
   /* ---------------------------------------- */
-  
+
   .directions__list {
     grid-template: none;
   }
-  
+
   .directions__list-item--empty {
     display: none;
   }
+
   /* ---------------------------------------- */
 
   .team__slider-arrow {
@@ -2061,9 +2106,11 @@ html, body {
     justify-content: center;
     margin-top: 20px;
   }
+
   .team__slider li {
     margin-right: 10px;
   }
+
   .team__slider button {
     font-size: 0;
     background: transparent;
@@ -2072,6 +2119,7 @@ html, body {
     display: flex;
     align-items: center;
   }
+
   .team__slider button:before {
     border: solid 1px #444343;
     content: "";
@@ -2080,32 +2128,40 @@ html, body {
     border-radius: 5px;
     background-color: #c8d417;
   }
+
   .team__slider .slick-active button::before {
     background-color: #61d41e;
     transition: all .3s;
   }
+
   /* ----------------------------------------- */
   .testimonials__slider-wrapper {
     margin-bottom: 15px;
   }
+
   .testimonials__slide-inner {
     padding-left: 40px;
   }
+
   .testimonials__quote {
     font-size: 17px;
     line-height: inherit;
   }
+
   .testimonials__quote::before {
     left: -48px;
     scale: 0.8;
   }
+
   .testimonials__dots button {
     width: 20px;
   }
+
   /* ------------------------------- */
   .companies__grid {
     grid-template: repeat(4, auto) / repeat(3, 1fr);
   }
+
   /* -------------------------------- */
   .blog__heading {
     flex-direction: column;
@@ -2114,6 +2170,7 @@ html, body {
   }
 
 }
+
 /* ========================== 450 =========================== */
 
 @media (max-width: 450px) {
@@ -2140,13 +2197,13 @@ html, body {
   }
 
   /* ---------------------------------- */
-  
+
   .directions__filter-box {
     margin-bottom: 15px;
   }
 
   /* ---------------------------------- */
-  
+
   .cert__logos {
     flex-direction: column;
     align-items: center;
@@ -2159,9 +2216,13 @@ html, body {
   .cert__logos-item:last-child {
     margin: 0;
   }
+
   /* -------------------------------- */
   .companies__grid {
     grid-template: repeat(5, auto) / repeat(2, 1fr);
   }
+  /* -------------------------------- */
+  .info__socials-item {
+    margin-right: 15px;
+  }
 }
-
