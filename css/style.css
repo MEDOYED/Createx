@@ -1121,30 +1121,38 @@ html, body {
 }
 
 .blog__row {
-  display: flex;
+  display: flex;  
   margin: 0 -15px;
 }
 
 .blog__item {
   padding: 0 15px;
+  flex: 0 1 33.333%;
 }
 
 .blog__item-link {
   display: block;
+  height: 100%;
   transition: all 1.3s;
+}
+
+.blog__item-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog__image-box {
   border-radius: 4px;
   overflow: hidden;
-  position: relative;
+  position: relative; 
+  margin-bottom: 16px;
 }
 
 .blog__image-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin-bottom: 16px;
 }
 
 .blog__image-box span {
@@ -1165,6 +1173,12 @@ html, body {
   width: 16px;
   height: 16px;
   margin-right: 4px;
+}
+
+.blog__item-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog__item-info {
@@ -1230,6 +1244,7 @@ html, body {
 
 .blog__item-text {
   margin-bottom: 16px;
+  flex-grow: 1;
 }
 
 .blog__item-button {
@@ -1256,6 +1271,20 @@ html, body {
 .blog__item-link:hover .blog__item-button {
   color: #FF3F3A;
 }
+
+.blog__item--podcast .blog__image-box  {
+  background-color: #a3d0f7;
+}
+
+.blog__item--video .blog__image-box  {
+  background-color: #caf0e3;
+}
+
+.blog__item--article .blog__image-box  {
+  background-color: #fff8aa;;
+}
+
+
 
 .blog__item--podcast .blog__image-box span::before {
   background: url("../images/icons/podcast-icon.svg") 0 0 / 100% no-repeat;
@@ -1682,6 +1711,30 @@ html, body {
   .header__image {
     max-width: 540px;
   }
+  /* ------------------------------ */
+  .blog__item-info {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 8px;
+  }
+  .blog__info-el {
+    padding: 0;
+  }
+  .blog__info-el::after {
+    content: none;
+  }
+  .blog__info-dir {
+    order: 1;
+  }
+  .blog__info-date {
+    order: 3;
+    flex-basis: 100%;
+  }
+  .blog__info-time {
+    order: 2;
+  }
+  /* -------------------------------- */
+
 }
 
 /* ========================== 1100 =========================== */
@@ -1887,6 +1940,28 @@ html, body {
   .companies__grid {
     grid-template: repeat(3, auto) / repeat(4, 1fr);
   }
+  /* ---------------------------------------- */
+  .blog__row {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+
+  .blog__item {
+    padding: 0 0 30px 0;
+  }
+  .blog__item-inner {
+    
+  }
+  .blog__image-box {
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+  }
+  .blog__image-box img {
+    width: auto;
+  }
+
 
 
 
@@ -2031,6 +2106,13 @@ html, body {
   .companies__grid {
     grid-template: repeat(4, auto) / repeat(3, 1fr);
   }
+  /* -------------------------------- */
+  .blog__heading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 30px 0 0;
+  }
+
 }
 /* ========================== 450 =========================== */
 
