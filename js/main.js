@@ -138,7 +138,6 @@ $(function () {
       $('.burger').addClass('burger--follow')
     } else {
       $('.burger').removeClass('burger--follow')
-
     }
   }, 0);
 
@@ -147,23 +146,11 @@ $(function () {
   $(".burger, .overlay, .header__top a").on("click", function (e) {
     e.preventDefault()
     $(".header__top").toggleClass("header__top--open")
-
+    $(".overlay").toggleClass("overlay--show")
   })
 
   $('.footer__top-title--slide').on('click', function () {
     $(this).next().slideToggle()
   })
-
-  // затемнение екрана, когда открит бургер
-  $('.burger, .overlay').on('click', function (e) {
-    e.preventDefault()
-    $('.overlay--show').toggleClass('overlay')
-  })
-
-  $('.burger').on('click', function (e) {
-    e.preventDefault()
-    // $('.burger--active').toggleClass('burger')
-  })
-
 
 })
